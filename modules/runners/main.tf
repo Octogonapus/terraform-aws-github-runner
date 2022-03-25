@@ -67,6 +67,7 @@ resource "aws_launch_template" "runner" {
         volume_size           = lookup(block_device_mappings.value, "volume_size", var.volume_size)
         encrypted             = lookup(block_device_mappings.value, "encrypted", true)
         iops                  = lookup(block_device_mappings.value, "iops", null)
+        throughput            = lookup(block_device_mappings.value, "throughput", null)
       }
     }
   }

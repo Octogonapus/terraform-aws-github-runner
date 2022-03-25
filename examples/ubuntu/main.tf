@@ -64,6 +64,7 @@ module "runners" {
     volume_size           = 30
     encrypted             = true
     iops                  = null
+    throughput            = null
   }]
 
   runner_log_files = [
